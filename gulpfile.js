@@ -17,7 +17,7 @@ var viewFiles = "src/js/**/*.html";
 var interceptErrors = function(error) {
   var args = Array.prototype.slice.call(arguments);
 
-  // Send error to notification center with gulp-notify.
+  // Send error to notification center with gulp-notify
   notify.onError({
     title: 'Compile Error',
     message: '<%= error.message %>'
